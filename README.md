@@ -68,6 +68,30 @@ customer-churn-prediction/
 ├── README.md
 
 
+## API Usage Example
+
+### POST Request
+POST http://127.0.0.1:5000/predict
+
+Content-Type: application/json
+
+
+Example Input:
+```json
+{
+  "gender": "Female",
+  ...
+}
+
+
+{
+  "prediction": 1,
+  "result": "Churn"
+}
+
+
+
+
 ## Conclusion
 This project demonstrates a complete AI workflow including
 data preprocessing, model training, evaluation, hyperparameter
